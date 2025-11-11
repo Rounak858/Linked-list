@@ -11,6 +11,7 @@ typedef struct node {
 class Solution {
     public:
     node* partionList(node* head, int k) {
+        // Time Complexity = O(N) Space Complexity = O(1)
         if(head == nullptr || head->next == nullptr) return head;
         node* SmallList = new node(0, nullptr);
         node* LargeList = new node(0, nullptr);
